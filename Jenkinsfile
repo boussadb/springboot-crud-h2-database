@@ -17,7 +17,7 @@ pipeline{
                      }
                 }
 
-        stage(' deploy stage'){
+        stage('deployment stage'){
                 steps{
                         WithMaven('maven: maven3_5_3'){
                         sh 'mvn deploy'
